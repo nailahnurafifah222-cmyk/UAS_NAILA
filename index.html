@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Risol Kriuk - Renyahnya Bikin Ketagihan</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav>
+    <div class="logo">Risol Kriuk</div>
+    <div class="menu-nav">
+      <a href="#menu">Menu</a>
+      <a href="#galeri">Galeri</a>
+      <a href="#kontak">Kontak</a>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <div class="hero-content">
+      <h1>Risol Kriuk</h1>
+      <p>Renyah di Luar, Gurih di Dalam. Saus Sambal Bikin Nagih!</p>
+      <a href="#menu" class="btn">Lihat Menu</a>
+    </div>
+  </header>
+
+  <section id="menu" class="container">
+    <h2>Menu Favorit</h2>
+    <div class="menu-grid">
+      <div class="card">
+        <img src="risol_sayur.webp" alt="Risol Sayur">
+        <h3>Risol sayur</h3>
+        <p class="desc">Risol dengan isian sayur</p>
+        <div class="harga">Rp12.000 / 10 pcs</div>
+        <button class="btn-kecil add-to-cart" data-nama="Risol sayur" data-harga="12000">+ Keranjang</button>
+      </div>
+      <div class="card">
+        <img src="risol_ayamsuwir.jfif" alt="Risol Ayam Suwir">
+        <h3>Risol ayam suwir</h3>
+        <p class="desc">Risol dengan isian ayam suwir</p>
+        <div class="harga">Rp15.000 / porsi</div>
+        <button class="btn-kecil add-to-cart" data-nama="Risol ayam sueir" data-harga="15000">+ Keranjang</button>
+      </div>
+      <div class="card">
+        <img src="risol_telor.jpg" alt="Risol Telor">
+        <h3>Risol Telor</h3>
+        <p class="desc">Risol dengan isian telor</p>
+        <div class="harga">Rp18.000 / porsi</div>
+        <button class="btn-kecil add-to-cart" data-nama="Risol Telor" data-harga="18000">+ Keranjang</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="galeri" class="container">
+    <h2>Galeri Risol</h2>
+    <div class="slider">
+      <div class="slides">
+        <img src="risol_sayur.webp" alt="Risol 1">
+        <img src="risol_ayamsuwir.jfif" alt="Risol 2">
+        <img src="risol_telor.jpg" alt="Risol 3">
+      </div>
+      <button class="prev">‹</button>
+      <button class="next">›</button>
+    </div>
+  </section>
+
+  <section id="kontak" class="container kontak">
+    <h2>Hubungi Kami</h2>
+    <p>Order sekarang atau tanya-tanya dulu boleh 👇</p>
+    <a href="https://wa.me/62895603004001" class="btn-wa">Chat via WhatsApp</a>
+    <p class="alamat">Jl. Durian No. 12, Pekanbaru | Buka: 11.00 - 22.00 WIB</p>
+  </section>
+
+  <footer>
+    <p>© <span id="year"></span> Risol Kriuk. Follow IG: @Risolkriuk</p>
+  </footer>
+
+  <!-- KERANJANG -->
+  <div id="cart-icon">🛒 <span id="cart-count">0</span></div>
+  <div id="cart-sidebar">
+    <h3>Keranjang Pesanan</h3>
+    <div id="cart-items"></div>
+    <p>Total: <b>Rp<span id="cart-total">0</span></b></p>
+    <button id="checkout-wa" class="btn">Kirim ke WhatsApp</button>
+    <button id="close-cart">Tutup</button>
+  </div>
+
+  <a href="https://wa.me/62895603004001" class="wa-float">WA Admin</a>
+  <script src="script.js"></script>
+</body>
+</html>
