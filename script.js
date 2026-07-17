@@ -63,7 +63,7 @@ document.addEventListener("DOMContentLoaded", function() {
     // CHECKOUT WA
     document.getElementById('checkout-wa').onclick = () => {
         if(cart.length === 0) return alert("Keranjang masih kosong!");
-        let pesan = "Halo Pangsit Kriuk, saya mau pesan:%0A";
+        let pesan = "Halo Risol Kriuk,mau pesan:%0A";
         cart.forEach(item => { pesan += `- ${item.nama} x${item.jumlah}%0A`; });
         pesan += `Total: Rp${document.getElementById('cart-total').innerText}`;
         window.open(`https://wa.me/62895603004001?text=${pesan}`);
